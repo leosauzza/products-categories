@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mcVHcMRAGrVcPT6LU5jQGmP9xXhIpFuC4SLpHavy9LBX5MYOykfU7zQGEQcH06pm+9mLmTubLuLUCqXf6HP/Ng==",
+  "dgSpecHash": "dB13CkT9nYCOnKht6oWSOAflKVb5l6JVQTNm7wJsuABiR42EboyCrupSqxgpKp4jLnvbd/sbQX6vUiHzcS1tXA==",
   "success": true,
   "projectFilePath": "C:\\personalrepos\\products-categories\\products-categories.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,7 @@
     "C:\\Users\\leonardo.sauzza\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.5\\microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512",
     "C:\\Users\\leonardo.sauzza\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.5\\microsoft.entityframeworkcore.analyzers.7.0.5.nupkg.sha512",
     "C:\\Users\\leonardo.sauzza\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.5\\microsoft.entityframeworkcore.design.7.0.5.nupkg.sha512",
+    "C:\\Users\\leonardo.sauzza\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\7.0.5\\microsoft.entityframeworkcore.inmemory.7.0.5.nupkg.sha512",
     "C:\\Users\\leonardo.sauzza\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.5\\microsoft.entityframeworkcore.relational.7.0.5.nupkg.sha512",
     "C:\\Users\\leonardo.sauzza\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.5\\microsoft.entityframeworkcore.sqlserver.7.0.5.nupkg.sha512",
     "C:\\Users\\leonardo.sauzza\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

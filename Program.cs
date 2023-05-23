@@ -1,28 +1,32 @@
 using Microsoft.EntityFrameworkCore;
+using products_categories.Configuration;
 using products_categories.Data;
 
 var builder = WebApplication.CreateBuilder(args);
-// Add services to the container.
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
 
-builder.Services.AddDbContext<AppDbContext>(options =>
-        options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-builder.Services.AddSwaggerGen(c =>
+DependencyInjectionConfig.ConfigureServices(builder.Services);
+if (builder.Environment.IsDevelopment())
 {
-    c.SwaggerDoc("v1", new() { Title = "products_categories", Version = "v1" });
-});
-
+    builder.Services.AddDbContext<AppDbContext>(options =>
+        options.UseInMemoryDatabase("InMemoryDatabase")); // Nombre de la base de datos en memoria
+}
+else
+{
+    builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+}
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "products_categories v1"));
 }
+
 
 app.UseHttpsRedirection();
 
